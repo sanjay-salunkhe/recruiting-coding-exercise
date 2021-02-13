@@ -7,5 +7,11 @@
   = csrf_meta_tags
 
 %body
+  %div{class: 'currency-box'}
+    = label_tag 'Select currency'
+    = select_tag(:currency, 
+      options_for_select(list_of_currencies(@currency_exchange_data),[current_currency]),
+      :onchange => "changeCurrency(event);",
+      )
   %main.container
     = yield

@@ -5,9 +5,9 @@
     %article.product
       %h2= product.name
       %p= product.description
-      %strong
-        = product.price
-        EUR
+      %strong{id: product.id}
+        = product.convert_currency(current_currency,@currency_exchange_data)
+        = current_currency
 
       = link_to 'Show more', product
 
