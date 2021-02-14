@@ -10,7 +10,7 @@ class FetchCurrencyExchangeData
   # first position in array. if this assumption is incorrect then we wil have to change this method
   # code to find the latest exchange data from the list of array.
   def call
-    fetch_currency_exchange_data['Envelope']['Cube']['Cube'][0]['Cube']
+    fetch_currency_exchange_data['Envelope']['Cube']['Cube'][0]['Cube'] rescue []
   end
 
   private

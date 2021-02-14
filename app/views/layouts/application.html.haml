@@ -13,5 +13,8 @@
       options_for_select(list_of_currencies(@currency_exchange_data),[current_currency]),
       :onchange => "changeCurrency(event);",
       )
-  %main.container
+  %main{class: 'container footer-margin'}
     = yield
+
+  %div
+    = image_tag(image_path("footer.png"),class: 'footer')
