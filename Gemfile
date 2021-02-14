@@ -23,6 +23,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'haml', '~> 4.0.6'
+gem 'faker', '~> 1.4.3'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -37,7 +38,6 @@ group :development, :test do
   gem 'byebug'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'rspec-rails', '~> 3.0'
-  gem 'faker', '~> 1.4.3'
   gem 'nokogiri'
 end
 
